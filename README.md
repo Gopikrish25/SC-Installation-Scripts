@@ -1,3 +1,6 @@
+**This Repo consists of scripts which can be useful during migration from D365 RetailSDK to D365 CommerceSDK
+**
+
 .reg files will be used to update the required registry keys to support store commerce installation [*Applicable for the SCA apps which are 10.0.32 and above].
 
 MMA.ps1 is responsible to configure already installed SSMS server to support Mixed Mode Authentication.
