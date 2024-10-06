@@ -1,4 +1,8 @@
-﻿Remove-AppxPackage -AllUsers Microsoft.Dynamics.Retail.Pos_100.837.72.32244_x86__tfm0as0j1fqzt #AppxPackage name may vary
+#Determine the MPOS Appx Identifier by using this query 
+Get-AppxPackage -AllUsers
+
+#The below script will be used to trigger a clean uninstall of MPOS installed for all the users.
+Remove-AppxPackage -AllUsers Microsoft.Dynamics.Retail.Pos_100.837.72.32244_x86__tfm0as0j1fqzt #AppxPackage name may vary
 Write-Host "AppxPackage is Uninstalling..."
 Start-Sleep -Seconds 5
 Write-Host "AppxPackage is Uninstalled Successfully"
